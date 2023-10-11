@@ -11,8 +11,8 @@ terraform {
 # AWS 서울 리전 설정
 provider "aws" {
   region = "ap-northeast-2" # 서울 리전 코드
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
+  access_key = var.AWS_ACCESS_KEY_ID
+  secret_key = var.AWS_SECRET_ACCESS_KEY
 }
 
 # VPC 생성
