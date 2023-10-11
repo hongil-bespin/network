@@ -1,7 +1,7 @@
-variable "aws_access_key" {
+variable "AWS_ACCESS_KEY_ID" {
   description = "AWS access key from Terraform Cloud"
 }
 
-variable "aws_secret_key" {
+variable "AWS_SECRET_ACCESS_KEY" {
   description = "AWS secret key from Terraform Cloud"
 }
