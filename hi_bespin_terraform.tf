@@ -172,6 +172,11 @@ resource "aws_route_table_association" "DB_subnet_association_a" {
   route_table_id = aws_route_table.private_route_table_a.id
 }
 
+resource "aws_route_table_association" "public_subnet_association_c" {
+  subnet_id      = aws_subnet.public_subnet_c.id
+  route_table_id = aws_route_table.public_route_table.id
+}
+
 resource "aws_route_table_association" "web_subnet_association_c" {
   subnet_id      = aws_subnet.web_subnet_c.id
   route_table_id = aws_route_table.private_route_table_c.id
